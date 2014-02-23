@@ -33,7 +33,7 @@ class yii2instafeed extends Widget
     */
     public $clientOptions = array(
         'get'         => 'tagged',
-        'target'      => '#instafeedid',
+        'target'      => '#instafeedtarget',
         'tagName'     => 'awesome',
         'userId'      => 'abcded',
         'accessToken' => '123456_abcedef',
