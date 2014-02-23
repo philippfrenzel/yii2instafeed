@@ -15,13 +15,11 @@ use yii\web\AssetBundle;
 class yii2instafeedAsset extends AssetBundle
 {
     public $sourcePath = '@philippfrenzel/yii2instafeed/assets';
-    public $css = array(
-      'css/jquery.fullPage.css'
-    );
-    public $js = array(
-        'js/jquery.fullPage.js'        
-    );
-    public $depends = array(
+    public $css = [];
+    public $js = [
+        'js/instafeed.js'        
+    ];
+    public $depends = [
         'yii\web\JqueryAsset'
-    );
+    ];
 }

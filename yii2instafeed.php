@@ -32,8 +32,12 @@ class yii2instafeed extends Widget
     * @var array all attributes that be accepted by the plugin, check docs!
     */
     public $clientOptions = array(
-        'itemSelector' => '.item',
-        'columnWidth'  => 200
+        'get'         => 'tagged',
+        'target'      => '#instafeedid',
+        'tagName'     => 'awesome',
+        'userId'      => 'abcded',
+        'accessToken' => '123456_abcedef',
+        'template'    => '<a href="{{link}}"><img src="{{image}}" /></a>'
     );
 
     /**
@@ -44,7 +48,8 @@ class yii2instafeed extends Widget
     {
         parent::init();
         //checks for the element id
-        if (!isset($this->options['id'])) {
+        if (!isset($this->options['id'])) 
+        {
             $this->options['id'] = $this->getId();
         }
         echo Html::beginTag('div', ['id' => $this->options['id']]); //opens the container
@@ -74,16 +79,9 @@ class yii2instafeed extends Widget
         $js = array();
         
         $options = Json::encode($this->clientOptions);
-        $js[] = "$.fn.fullpage($options);";
+        $js[] = "var feed$id = new Instafeed($options);";
+        $js[] = "feed$id.run();";
 
-        /*if (!empty($this->clientEvents)) {
-            $js = array();
-            foreach ($this->clientEvents as $event => $handler) {
-                $js[] = "dhtmlx$id.attachEvent('$event', $handler);";
-            }
-            $view->registerJs(implode("\n", $js),View::POS_READY);
-        }*/
-        
         $view->registerJs(implode("\n", $js),View::POS_READY);
     }
 
