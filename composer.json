@@ -1,13 +1,13 @@
 {
-	"name": "philippfrenzel/yii2fullpagejs",
+	"name": "philippfrenzel/yii2instafeed",
 	"description": "Yii2 fullpage.js Integration",
-	"keywords": ["yii","fullPage.js"],
+	"keywords": ["yii","instafeed.js"],
 	"homepage": "http://www.frenzel.net/",
 	"type": "yii2-extension",
 	"license": "MIT",
 	"authors": [
 		{
-			"name": "Alvaro Trigo",
+			"name": "Steven Schobert",
 			"email": "alvaro@alvarotrigo.com",
 			"homepage": "http://www.alvarotrigo.com/",
 			"role": "project lead"
@@ -20,13 +20,13 @@
 		}
 	],
 	"support": {
-		"source": "https://github.com/philippfrenzel/yii2fullpagejs"
+		"source": "https://github.com/philippfrenzel/yii2instafeed"
 	},
 	"require": {
 		"yiisoft/yii2": "*"
 	},
 	"autoload": {
-		"psr-0": { "philippfrenzel\\yii2fullpagejs\\": "" }
+		"psr-0": { "philippfrenzel\\yii2instafeed\\": "" }
 	},
-	"target-dir": "philippfrenzel/yii2fullpagejs"
+	"target-dir": "philippfrenzel/yii2instafeed"
 }
