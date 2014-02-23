@@ -17,7 +17,7 @@ class yii2instafeedAsset extends AssetBundle
     public $sourcePath = '@philippfrenzel/yii2instafeed/assets';
     public $css = [];
     public $js = [
-        'js/instafeed.min.js'  
+        'js/instafeed.js'  
     ];
     public $depends = [
         'yii\web\JqueryAsset'
