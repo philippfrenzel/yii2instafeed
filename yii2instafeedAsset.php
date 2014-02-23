@@ -9,7 +9,7 @@ namespace philippfrenzel\yii2instafeed;
 use yii\web\AssetBundle;
 
 /**
- * @author Qiang Xue <qiang.xue@gmail.com>
+ * @author Qiang Xue <philipp@gfrenzel.net>
  * @since 2.0
  */
 class yii2instafeedAsset extends AssetBundle
